@@ -389,7 +389,7 @@ public final class LocaleServiceProviderPool {
      * provider available
      */
     private static final List<LocaleServiceProvider> NULL_LIST =
-        Collections.emptyList();
+        Collections.unmodifiableList(new ArrayList<>());
 
     /**
      * An interface to get a localized object for each locale sensitive
